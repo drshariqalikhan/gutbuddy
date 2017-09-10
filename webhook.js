@@ -22,7 +22,7 @@ app.post('/echo', function(req, res) {
 //         speech = "false";
 //     }
     
-    state = JSON.stringify(req.body.result.metadata.intentName);
+    state = req.body.result.metadata.intentName;
     switch(state) {
     case "gut_ai.Hi":
        speech = "ai.HI intent";
