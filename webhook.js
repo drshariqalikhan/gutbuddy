@@ -1,5 +1,6 @@
 'use strict';
 var speech = "";
+var state;
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -12,14 +13,39 @@ app.use(bodyParser.json());
 app.post('/echo', function(req, res) {
     
     //var speech = JSON.stringify(req.body.result.parameters.mcount);
-    if(req.body.result.metadata.intentName == "magic")
-    {
-        speech = JSON.stringify(req.body.result.parameters.mcount);
-    }
-    else
-    {
-        speech = "false";
-    }
+//     if(req.body.result.metadata.intentName == "magic")
+//     {
+//         speech = JSON.stringify(req.body.result.parameters.mcount);
+//     }
+//     else
+//     {
+//         speech = "false";
+//     }
+    
+    state = JSON.stringify(req.body.result.metadata.intentName);
+    switch(state) {
+    case "gut_ai.Hi":
+       speech = "ai.HI intent";
+        break;
+    case "gut_ai.Hi - yes":
+        speech = "ai.HI intent-yes";
+        break;
+    case "gut_ai.Hi - no":
+       speech = "ai.HI intent-no";
+        break;
+    case "WEather":
+       speech = "weather intent";
+        break;
+    case "magic":
+        speech = "magic intent";
+        break;
+    default:
+       speech = "?? intent";
+     } 
+    
+    
+    
+
     
     return res.json({
         speech: speech,
