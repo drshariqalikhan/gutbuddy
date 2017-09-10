@@ -40,7 +40,7 @@ app.post('/echo', function(req, res) {
         speech = "magic intent";
         break;
     default:
-       speech = "?? intent";
+       speech = "??"+ state;
      } 
     
     
