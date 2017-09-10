@@ -3,7 +3,7 @@ var speech = "";
 var state;
 const express = require('express');
 const bodyParser = require('body-parser');
-const fd = require('./finder');
+const fd = require('./finder.js');
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
