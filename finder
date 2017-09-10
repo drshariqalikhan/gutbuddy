@@ -3,5 +3,11 @@
 
 */
 'use strict';
+module.exports =
+    {
+        locater:function (jason)
+        {
 
+        }
+    };
 
