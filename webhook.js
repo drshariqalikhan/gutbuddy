@@ -13,15 +13,8 @@ app.use(bodyParser.json());
 app.post('/echo', function(req, res) {
     
     //var speech = JSON.stringify(req.body.result.parameters.mcount);
-//     if(req.body.result.metadata.intentName == "magic")
-//     {
-//         speech = JSON.stringify(req.body.result.parameters.mcount);
-//     }
-//     else
-//     {
-//         speech = "false";
-//     }
-    
+
+    //detect intent
     state = req.body.result.metadata.intentName;
     switch(state) {
     case "gut_ai.Hi":
