@@ -1,5 +1,5 @@
 {
-  "name": "fb-weather-bot",
+  "name": "gutbuddy",
   "version": "0.1.0",
   "description": "Facebook bot using api.ai",
   "main": "webhook.js",
@@ -18,7 +18,7 @@
     "facebook",
     "messenger"
   ],
-  "author": "Tomomi ❤️ Imura",
+  "author": "Shariq Ali Khan",
   "license": "MIT",
   "dependencies": {
     "apiai": "^3.0.3",
