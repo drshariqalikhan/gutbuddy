@@ -18,29 +18,9 @@ app.post('/echo', function(req, res) {
 
     //detect intent
     state = req.body.result.metadata.intentName;
-//     switch(state) {
-//     case "gut_ai.Hi":
-//        speech = "ai.HI intent";
-//         break;
-//     case "gut_ai.Hi - yes":
-//         speech = "ai.HI intent-yes";
-//         break;
-//     case "gut_ai.Hi - no":
-//        speech = "ai.HI intent-no";
-//         break;
-//     case "WEather":
-//        speech = "weather intent";
-//         break;
-//     case "magic":
-//         speech = "magic intent";
-//         break;
-//     default:
-//        speech = "??"+ state;
-//      } 
-    
-    
-    
+    speech = fd.locater(state);
 
+    
     
     return res.json({
         speech: speech,
