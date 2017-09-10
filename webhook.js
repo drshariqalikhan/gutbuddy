@@ -3,12 +3,14 @@ var speech = "";
 var state;
 const express = require('express');
 const bodyParser = require('body-parser');
-
+const fd = require('./finder');
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(bodyParser.json());
+
+
 
 app.post('/echo', function(req, res) {
     
