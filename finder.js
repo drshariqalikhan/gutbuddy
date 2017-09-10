@@ -24,7 +24,7 @@ module.exports =
               return "magic intent";
               break;
           default:
-               return "??"+ state;
+               return "??"+ st;
      } 
 
         }
