@@ -4,5 +4,6 @@
 'use strict';
 module.exports =
     {
-      
+        firstGreet:"speech: \'greetings\',displayText: \'test greetings\',source: \'webhook-echo-sample\'";
     };
+ 
