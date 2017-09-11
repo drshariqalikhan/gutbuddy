@@ -3,28 +3,33 @@
 
 */
 'use strict';
+const rsp = require('./responses.js');
 module.exports =
     {
-        locater:function (st)
+        responder:function (st)
         {
           switch(st) {
-          case "gut_ai.Hi":
-              return "ai.HI intent";
+          case "getstarted":
+              return rsp.getstartedresp;
               break;
-          case "gut_ai.Hi - yes":
-              return "ai.HI intent-yes";
+          case "question1":
+              return rsp.question1resp;
               break;
-          case "gut_ai.Hi - no":
-             return "ai.HI intent-no";
+          case "question2":
+             return rsp.question2resp;
               break;
-          case "WEather":
-             return "weather intent";
+          case "question3":
+             return rsp.question3resp;
               break;
-          case "magic":
-              return "magic intent";
+          case "Displayresults":
+              return rsp.Displayresultsresp;
               break;
+          case "gb_advice":
+              return rsp.gb_adviceresp;
+          case "Default Fallback Intent":
+              return rsp.defaultresp;
           default:
-               return "??"+ st;
+               return rsp.defaultresp;
      } 
 
         }
