@@ -21,8 +21,7 @@ app.post('/echo', function(req, res) {
     state = req.body.result.metadata.intentName;
     speech = fd.locater(state);
 
-   return res.json ({  "facebook": {    "attachment": {      "type": "template",      "payload": {   "template_type":"button","text":"What do you want to do next?",
-        "buttons":[{"type":"postback","title":"Visit Messenger","payload":"testing testing"} ]        }    }  }});
+   return res.json (rsp.firstGreet);
     
 //     return res.json({
 //         speech: rsp.firstGreet,
