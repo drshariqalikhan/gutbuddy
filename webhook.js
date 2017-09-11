@@ -14,16 +14,10 @@ app.use(bodyParser.json());
 app.post('/echo', function(req, res) {
     
     //detect intent
-    state = req.body.result.metadata.intentName;
-    speech = fd.locater(state);
-
-   return res.json (rsp.firstGreet);
-    
-//     return res.json({
-//         speech: rsp.firstGreet,
-//         displayText: rsp.firstGreet,
-//         source: 'webhook-echo-sample'
-//     });
+    var output = fd.responder(req.body.result.metadata.intentName);
+  
+   //respond approriately 
+   return res.json (output);
 });
 app.listen((process.env.PORT || 8000), function() {
     console.log("Server up and listening");
