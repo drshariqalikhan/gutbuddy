@@ -34,7 +34,7 @@ module.exports = {
                         }
                       }
                     }
-                  }   
+                  },   
        question1:{
                   "speech": "...",  
                   "displayText": "...",
@@ -66,7 +66,7 @@ module.exports = {
                         }
                       }
                     }
-                  }   
+                  },   
        question2:{
                   "speech": "...",  
                   "displayText": "...",
@@ -98,7 +98,7 @@ module.exports = {
                         }
                       }
                     }
-                  } 
+                  }, 
         question3:{
                   "speech": "...",  
                   "displayText": "...",
@@ -130,7 +130,7 @@ module.exports = {
                         }
                       }
                     }
-                  }    
+                  },    
      endresponse:{
                   "speech": "...",  
                   "displayText": "...",
