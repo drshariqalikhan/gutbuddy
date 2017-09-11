@@ -24,7 +24,7 @@ app.post('/echo', function(req, res) {
 //    return res.json ({rsp.firstGreet});
     
     return res.json({
-        speech: speech,
+        speech: rsp.firstGreet,
         displayText: rsp.firstGreet,
         source: 'webhook-echo-sample'
     });
