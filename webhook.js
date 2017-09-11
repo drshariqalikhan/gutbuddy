@@ -1,6 +1,4 @@
 'use strict';
-var speech = "";
-var state;
 const express = require('express');
 const bodyParser = require('body-parser');
 const fd = require('./finder.js');
@@ -15,8 +13,6 @@ app.use(bodyParser.json());
 
 app.post('/echo', function(req, res) {
     
-    //var speech = JSON.stringify(req.body.result.parameters.mcount);
-
     //detect intent
     state = req.body.result.metadata.intentName;
     speech = fd.locater(state);
