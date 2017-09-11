@@ -17,17 +17,17 @@ module.exports = {
                               {
                                 "type": "postback",
                                 "title": "more than once a week",
-                                "payload": "more than once a week"
+                                "payload": "001"
                               },
                               {
                                 "type": "postback",
                                 "title": "less than once a month",
-                                "payload": "less than once a month"
+                                "payload": "002"
                               },
                               {
                                 "type": "postback",
                                 "title": "other",
-                                "payload": "other"
+                                "payload": "00a"
                               }
                             ]
                           }
