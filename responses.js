@@ -3,7 +3,7 @@
 */
 'use strict';
 module.exports = {
-        firstGreet:{
+        getstartedresp:{
                   "speech": "...",  
                   "displayText": "...",
                   "data":  {
@@ -16,8 +16,8 @@ module.exports = {
                             "buttons": [
                               {
                                 "type": "postback",
-                                "title": "more than once a week",
-                                "payload": "001"
+                                "title": "getstartedresp",
+                                "payload": " getstartedresp"
                               },
                               {
                                 "type": "postback",
@@ -35,7 +35,7 @@ module.exports = {
                       }
                     }
                   },   
-       question1:{
+    question1resp:{
                   "speech": "...",  
                   "displayText": "...",
                   "data":  {
@@ -48,8 +48,8 @@ module.exports = {
                             "buttons": [
                               {
                                 "type": "postback",
-                                "title": "more than once a week",
-                                "payload": "more than once a week"
+                                "title": "question1resp",
+                                "payload": "question1resp"
                               },
                               {
                                 "type": "postback",
@@ -67,7 +67,7 @@ module.exports = {
                       }
                     }
                   },   
-       question2:{
+    question2resp:{
                   "speech": "...",  
                   "displayText": "...",
                   "data":  {
@@ -80,8 +80,8 @@ module.exports = {
                             "buttons": [
                               {
                                 "type": "postback",
-                                "title": "more than once a week",
-                                "payload": "more than once a week"
+                                "title": "question2resp",
+                                "payload": "question2resp"
                               },
                               {
                                 "type": "postback",
@@ -99,7 +99,7 @@ module.exports = {
                       }
                     }
                   }, 
-        question3:{
+    question3resp:{
                   "speech": "...",  
                   "displayText": "...",
                   "data":  {
@@ -112,8 +112,8 @@ module.exports = {
                             "buttons": [
                               {
                                 "type": "postback",
-                                "title": "more than once a week",
-                                "payload": "more than once a week"
+                                "title": "question3resp",
+                                "payload": "question3resp"
                               },
                               {
                                 "type": "postback",
@@ -131,7 +131,7 @@ module.exports = {
                       }
                     }
                   },    
-     endresponse:{
+ Displayresultsresp:{
                   "speech": "...",  
                   "displayText": "...",
                   "data":  {
@@ -144,8 +144,8 @@ module.exports = {
                             "buttons": [
                               {
                                 "type": "postback",
-                                "title": "more than once a week",
-                                "payload": "more than once a week"
+                                "title": "Displayresultsresp",
+                                "payload": "Displayresultsresp"
                               },
                               {
                                 "type": "postback",
