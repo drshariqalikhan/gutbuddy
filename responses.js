@@ -3,7 +3,10 @@
 */
 'use strict';
 module.exports = {
-        firstGreet: {
+        firstGreet:{
+                  "speech": "...",  
+                  "displayText": "...",
+                  "data":  {
                       "facebook": {
                         "attachment": {
                           "type": "template",
@@ -31,5 +34,6 @@ module.exports = {
                         }
                       }
                     }
-    };
+                  }         
+                 };
  
