@@ -21,13 +21,13 @@ app.post('/echo', function(req, res) {
     state = req.body.result.metadata.intentName;
     speech = fd.locater(state);
 
-    return res.json ({rsp.firstGreet});
+//    return res.json ({rsp.firstGreet});
     
-//     return res.json({
-//         speech: speech,
-//         displayText: speech,
-//         source: 'webhook-echo-sample'
-//     });
+    return res.json({
+        speech: speech,
+        displayText: rsp.firstGreet,
+        source: 'webhook-echo-sample'
+    });
 });
 app.listen((process.env.PORT || 8000), function() {
     console.log("Server up and listening");
