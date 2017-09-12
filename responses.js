@@ -162,7 +162,12 @@ module.exports = {
                         }
                       }
                     }
-                  }      
+                  },
+      defaultresp:{
+                  "speech": "please tap a button to respond",  
+                  "displayText": "please tap a button to respond"
+               
+                  }     
                  };
 
  
