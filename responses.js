@@ -16,7 +16,7 @@ module.exports = {
                             "buttons": [
                               {
                                 "type": "postback",
-                                "title": "getstartedresp",
+                                "title": "chop chop",
                                 "payload": " getstartedresp"
                               },
                               {
