@@ -1,0 +1,26 @@
+// Require library
+var excel = require('excel4node');
+
+// Create a new instance of a Workbook class
+var workbook = new excel.Workbook();
+
+// Add Worksheets to the workbook
+var worksheet = workbook.addWorksheet('Sheet 1');
+// Create a reusable style
+var style = workbook.createStyle({
+  font: {
+    color: '#FF0800',
+    size: 12
+  },
+  numberFormat: '$#,##0.00; ($#,##0.00); -'
+});
+
+
+'use strict';
+module.exports = { 
+     record:function (value)
+        {  
+            // Set value of cell A1 to 100 as a number type styled with paramaters of style
+            worksheet.cell(1,1).number(value).style(style);
+        }
+};
