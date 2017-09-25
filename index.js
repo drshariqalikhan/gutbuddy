@@ -6,7 +6,12 @@ app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(request, response) {
   //response.render('pages/index');
-  response.json({"message": {"text" : "testin my webhook"}});
+  response.json({
+ "messages": [
+   {"text": "Welcome to the Chatfuel Rockets!"},
+   {"text": "What are you up to?"}
+ ]
+});
 });
 
 app.listen(app.get('port'), function() {
